@@ -261,12 +261,14 @@ h1, h2, p, a {
 
 .contact .input-em {
   font-family: "NeueMontreal-Light";
+  color: rgba(255, 255, 255, 0.4);
   padding: 10px 0px 10px 20px;
   margin: 0px 0px 40px;
 }
 
 .contact .input-text {
   font-family: "NeueMontreal-Light";
+  color: rgba(255, 255, 255, 0.4);
   padding: 10px 0px 0px 10px;
   height: 240px;
   resize: none;

@@ -220,12 +220,14 @@ h1,h2,p,a {margin:0;}
     .input-em {
         @extend .chose-problem;
         font-family: "NeueMontreal-Light";
+        color: rgba(255, 255, 255, 0.4);
         padding: 10px 0px 10px 20px;
         margin: 0px 0px 40px;
     }
     .input-text {
         @extend .chose-problem;
         font-family: "NeueMontreal-Light";
+        color: rgba(255, 255, 255, 0.4);
         padding: 10px 0px 0px 10px;
         height: 240px;
         resize: none;
