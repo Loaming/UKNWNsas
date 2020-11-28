@@ -1,0 +1,403 @@
+@import url(c:\reset.css);
+.cases .cases-intro, .unknwn-team .team-logo {
+  font-size: 72px;
+  color: white;
+  line-height: 93.6px;
+}
+
+.about-us .about-us-text, .cases .maintext-project, .cases .cases-text-end, .unknwn-team .team-text, .contact .contact-zag {
+  font-size: 49px;
+  color: white;
+  line-height: 63.7px;
+}
+
+body {
+  margin: 0;
+  font-family: "NeueMontreal-Bold";
+  font-size: 24px;
+  color: white;
+}
+
+h1, h2, p, a {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background-color: #131313;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 24px 40px;
+  line-height: 31.2px;
+}
+
+.header .link {
+  text-decoration: none;
+  margin-right: 36px;
+  color: white;
+}
+
+.header .link:last-child {
+  margin-right: 0;
+}
+
+.header .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 208px 0px 298px 0px;
+}
+
+.unknwn {
+  width: 60%;
+  background-size: cover;
+}
+
+/* ABOUT-US */
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 140px 0px 76px 0px;
+}
+
+.about-us .about-us-text {
+  color: black;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-us .color {
+  color: blue;
+}
+
+/* CASES */
+.cases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #131313;
+  padding: 72px 0px 174px 0px;
+}
+
+.cases .cases-intro {
+  margin: 0px 0px 80px;
+}
+
+.cases .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 96px;
+  margin: 0 -50px;
+}
+
+.cases .item {
+  width: 50%;
+  border: 1px solid #4d4d4d;
+  padding: 56px 116px 56px 50px;
+}
+
+.cases .maintext-project {
+  margin: 0px 0px 24px 0px;
+}
+
+.cases .subtext-project {
+  font-family: "NeueMontreal-Light";
+  max-width: 384px;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.cases .cases-text-end {
+  text-transform: uppercase;
+}
+
+/* UNKNWN-TEAM */
+.unknwn-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 0px 96px 0px;
+}
+
+.unknwn-team .team-logo {
+  color: black;
+  margin: 0px 0px 136px;
+}
+
+.unknwn-team .team-text {
+  color: black;
+  margin: 0px 0px 56px;
+}
+
+.unknwn-team .team-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 64px;
+  margin: 0 -30px;
+}
+
+.unknwn-team .user-profile {
+  width: 25%;
+  padding: 30px 30px;
+  border: 1px solid #dedede;
+}
+
+.unknwn-team .user-pic {
+  width: 250px;
+  height: 250px;
+}
+
+.unknwn-team .name {
+  font-size: 22px;
+  line-height: 28.6px;
+  color: black;
+  padding: 20px 0px 4px;
+}
+
+.unknwn-team .who {
+  font-family: "NeueMontreal-Light";
+  font-size: 18px;
+  line-height: 23.4px;
+  color: black;
+}
+
+.unknwn-team .text-team-end {
+  font-size: 24px;
+  line-height: 31.2px;
+  color: black;
+}
+
+/* CONTACT */
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 96px 0px 190px 0px;
+  background-color: #163699;
+}
+
+.contact .rocol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+}
+
+.contact .contact-zag {
+  margin: 0px 0px 50px;
+}
+
+.contact .main-contact {
+  font-size: 24px;
+  line-height: 31.2px;
+  margin: 0px 0px 20px;
+}
+
+.contact .chose {
+  margin-bottom: 30px;
+}
+
+.contact .chose-problem, .contact .input-em, .contact .input-text {
+  font-family: "NeueMontreal-Bold";
+  font-size: 18px;
+  line-height: 23.4px;
+  background: transparent;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.contact .input-em {
+  font-family: "NeueMontreal-Light";
+  padding: 10px 0px 10px 20px;
+  margin: 0px 0px 40px;
+}
+
+.contact .input-text {
+  font-family: "NeueMontreal-Light";
+  padding: 10px 0px 0px 10px;
+  height: 240px;
+  resize: none;
+  margin: 0px 0px 40px;
+}
+
+.contact .send-req {
+  font-family: "NeueMontreal-Bold";
+  font-size: 24px;
+  color: #163699;
+  padding: 14px 0px 14px 0px;
+  cursor: pointer;
+}
+
+.contact .inf-contact {
+  width: 35%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px 30px;
+  margin: 108px 0px 450px 60px;
+}
+
+.contact .inf-zag-text {
+  font-size: 24px;
+  line-height: 31.2px;
+  margin-bottom: 20px;
+}
+
+.contact .inf-subtext {
+  font-family: "NeueMontreal-Bold";
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+/* FOOTER */
+.footer {
+  background: #131313;
+}
+
+.footer .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 152px 0px 148px 0px;
+}
+
+.footer .nav-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px 24px 40px;
+}
+
+.footer .logo-end {
+  font-size: 24px;
+  line-height: 31.2px;
+  margin-right: 32px;
+}
+
+.footer .end-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .link-end, .footer .f {
+  font-family: "NeueMontreal-Light";
+  font-size: 16px;
+  line-height: 20.8px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+.footer .link-end:last-child, .footer .f:last-child {
+  margin: 0;
+}
+
+.footer .f {
+  font-size: 14px;
+  line-height: 18.2px;
+  color: white;
+}
+
+@media (max-width: 1180px) {
+  .container {
+    width: calc(100% - 80px);
+  }
+  .user-profile {
+    min-width: 310px;
+  }
+}
+
+@media (max-width: 860px) {
+  .container {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+  .item {
+    width: 100% !important;
+  }
+  .about-us-text {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "NeueMontreal-Bold";
+  src: url(/fonts/NeueMontreal-Bold.otf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "NeueMontreal-Light";
+  src: url(/fonts/NeueMontreal-Light.otf);
+  font-style: normal;
+  font-weight: lighter;
+}
+/*# sourceMappingURL=style.css.map */
