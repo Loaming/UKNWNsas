@@ -372,7 +372,7 @@ h1, h2, p, a {
     width: calc(100% - 80px);
   }
   .user-profile {
-    min-width: 310px;
+    min-width: 310px !important;
   }
 }
 
@@ -381,11 +381,20 @@ h1, h2, p, a {
     width: calc(100% - 40px);
     padding: 0 20px;
   }
+  .row {
+    margin: 0 0px 0px -50px !important;
+  }
   .item {
     width: 100% !important;
   }
   .about-us-text {
-    width: 100%;
+    width: 100% !important;
+  }
+  .left-side {
+    width: 100% !important;
+  }
+  .inf-contact {
+    display: none !important;
   }
 }
 
