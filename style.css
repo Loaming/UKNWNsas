@@ -64,50 +64,6 @@ h1, h2, p, a {
   border: 1px solid #4d4d4d;
 }
 
-.header .rectangle-1 {
-  position: absolute;
-  top: 476px;
-  display: block;
-  content: '';
-  width: 795px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  border: 1px solid #4d4d4d;
-}
-
-.header .rectangle-2 {
-  position: absolute;
-  top: 477px;
-  display: block;
-  content: '';
-  width: 100%;
-  border: 1px solid #4d4d4d;
-}
-
-.header .rectangle-3 {
-  position: absolute;
-  top: 476px;
-  left: 0;
-  display: block;
-  content: '';
-  width: 795px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  border: 1px solid #4d4d4d;
-}
-
-.header .rectangle-4 {
-  position: absolute;
-  top: 476px;
-  right: 0;
-  display: block;
-  content: '';
-  width: 795px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  border: 1px solid #4d4d4d;
-}
-
 .header .link {
   text-decoration: none;
   margin-right: 36px;
@@ -202,32 +158,12 @@ h1, h2, p, a {
   margin: 0px 0px 24px 0px;
 }
 
-.cases .maintext-project::after {
-  position: absolute;
-  left: -1px;
-  top: 2585px;
-  display: block;
-  content: '';
-  width: 100%;
-  border: 1px solid #4d4d4d;
-}
-
 .cases .subtext-project {
   font-family: "NeueMontreal-Light";
   max-width: 384px;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 500;
-}
-
-.cases .subtext-project::after {
-  position: absolute;
-  left: -1px;
-  top: 2275px;
-  display: block;
-  content: '';
-  width: 100%;
-  border: 1px solid #4d4d4d;
 }
 
 .cases .cases-text-end {
@@ -245,16 +181,6 @@ h1, h2, p, a {
 .unknwn-team .team-logo {
   color: black;
   margin: 0px 0px 136px;
-}
-
-.unknwn-team .team-logo::after {
-  position: absolute;
-  left: -1px;
-  top: 3289px;
-  display: block;
-  content: '';
-  width: 100%;
-  border: 1px solid #dedede;
 }
 
 .unknwn-team .team-text {
@@ -280,16 +206,6 @@ h1, h2, p, a {
 
 .unknwn-team .team-profile::before {
   position: absolute;
-  left: -1px;
-  display: block;
-  content: '';
-  width: 100%;
-  border: 1px solid #dedede;
-}
-
-.unknwn-team .team-profile::after {
-  position: absolute;
-  top: 4044px;
   left: -1px;
   display: block;
   content: '';
@@ -445,16 +361,6 @@ h1, h2, p, a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 40px 24px 40px;
-}
-
-.footer .nav-end::before {
-  position: absolute;
-  left: -1px;
-  top: 6042px;
-  display: block;
-  content: '';
-  width: 100%;
-  border: 1px solid #4d4d4d;
 }
 
 .footer .logo-end {

@@ -59,43 +59,6 @@ h1,h2,p,a {margin:0;}
         width: 100%;
         border: 1px solid rgba(77, 77, 77, 1);
     }
-    .rectangle-1 {
-        position: absolute;
-        top: 476px;
-        display: block;
-        content: '';
-        width: 795px;
-        transform: rotate(90deg);
-        border: 1px solid rgba(77, 77, 77, 1);
-    }
-    .rectangle-2 {
-        position: absolute;
-        top: 477px;
-        display: block;
-        content: '';
-        width: 100%;
-        border: 1px solid rgba(77, 77, 77, 1);
-    }
-    .rectangle-3 {
-        position: absolute;
-        top: 476px;
-        left: 0;
-        display: block;
-        content: '';
-        width: 795px;
-        transform: rotate(90deg);
-        border: 1px solid rgba(77, 77, 77, 1);
-    }
-    .rectangle-4 {
-        position: absolute;
-        top: 476px;
-        right: 0;
-        display: block;
-        content: '';
-        width: 795px;
-        transform: rotate(90deg);
-        border: 1px solid rgba(77, 77, 77, 1);
-    }
 
     .link {
         text-decoration: none;
@@ -172,30 +135,12 @@ h1,h2,p,a {margin:0;}
         @extend %h2-sub;
         margin: 0px 0px 24px 0px;
     }
-    .maintext-project::after {
-        position: absolute;
-        left: -1px;
-        top: 2585px;
-        display: block;
-        content: '';
-        width: 100%;
-        border: 1px solid rgba(77, 77, 77, 1);
-    }
     .subtext-project {
         font-family: "NeueMontreal-Light";
         max-width: 384px;
         font-size: $sub-font;
         line-height: 23.4px;
         font-weight: 500;
-    }
-    .subtext-project::after {
-        position: absolute;
-        left: -1px;
-        top: 2275px;
-        display: block;
-        content: '';
-        width: 100%;
-        border: 1px solid rgba(77, 77, 77, 1);
     }
     .cases-text-end {
         @extend %h2-sub;
@@ -215,15 +160,6 @@ h1,h2,p,a {margin:0;}
         color: $secondary-color;
         margin: 0px 0px 136px;
     }
-    .team-logo::after {
-        position: absolute;
-        left: -1px;
-        top: 3289px;
-        display: block;
-        content: '';
-        width: 100%;
-        border: 1px solid rgba(222, 222, 222, 1);
-    }
     .team-text {
         @extend %h2-sub;
         color: $secondary-color;
@@ -242,15 +178,6 @@ h1,h2,p,a {margin:0;}
     }
     .team-profile::before {
         position: absolute;
-        left: -1px;
-        display: block;
-        content: '';
-        width: 100%;
-        border: 1px solid rgba(222, 222, 222, 1);
-    }
-    .team-profile::after {
-        position: absolute;
-        top: 4044px;
         left: -1px;
         display: block;
         content: '';
@@ -376,15 +303,6 @@ h1,h2,p,a {margin:0;}
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 20px 40px 24px 40px;
-    }
-    .nav-end::before {
-        position: absolute;
-        left: -1px;
-        top: 6042px;
-        display: block;
-        content: '';
-        width: 100%;
-        border: 1px solid rgba(77, 77, 77, 1);
     }
     .logo-end {
         font-size: $primary-font;
