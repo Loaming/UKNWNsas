@@ -50,6 +50,52 @@ h1,h2,p,a {margin:0;}
         padding: 24px 40px;
         line-height: 31.2px;
     }
+    .nav::after {
+        position: absolute;
+        top: 79px;
+        left: -1px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
+    .rectangle-1 {
+        position: absolute;
+        top: 476px;
+        display: block;
+        content: '';
+        width: 795px;
+        transform: rotate(90deg);
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
+    .rectangle-2 {
+        position: absolute;
+        top: 477px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
+    .rectangle-3 {
+        position: absolute;
+        top: 476px;
+        left: 0;
+        display: block;
+        content: '';
+        width: 795px;
+        transform: rotate(90deg);
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
+    .rectangle-4 {
+        position: absolute;
+        top: 476px;
+        right: 0;
+        display: block;
+        content: '';
+        width: 795px;
+        transform: rotate(90deg);
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
 
     .link {
         text-decoration: none;
@@ -66,7 +112,9 @@ h1,h2,p,a {margin:0;}
     }
 }
 .unknwn {
-    width: 60%;
+    width: 1180px;
+    height: 290px;
+    z-index: 9999;
     background-size: cover;
 }
 
@@ -99,6 +147,14 @@ h1,h2,p,a {margin:0;}
         @extend %h1-big;
         margin: 0px 0px 80px;
     }
+    .row::before {
+        position: absolute;
+        left: -1px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
     .row {
         display: flex;
         flex-direction: row;
@@ -116,11 +172,30 @@ h1,h2,p,a {margin:0;}
         @extend %h2-sub;
         margin: 0px 0px 24px 0px;
     }
+    .maintext-project::after {
+        position: absolute;
+        left: -1px;
+        top: 2585px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
     .subtext-project {
         font-family: "NeueMontreal-Light";
         max-width: 384px;
         font-size: $sub-font;
         line-height: 23.4px;
+        font-weight: 500;
+    }
+    .subtext-project::after {
+        position: absolute;
+        left: -1px;
+        top: 2275px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(77, 77, 77, 1);
     }
     .cases-text-end {
         @extend %h2-sub;
@@ -140,6 +215,15 @@ h1,h2,p,a {margin:0;}
         color: $secondary-color;
         margin: 0px 0px 136px;
     }
+    .team-logo::after {
+        position: absolute;
+        left: -1px;
+        top: 3289px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(222, 222, 222, 1);
+    }
     .team-text {
         @extend %h2-sub;
         color: $secondary-color;
@@ -154,6 +238,23 @@ h1,h2,p,a {margin:0;}
     .user-profile {
         width: 25%;
         padding: 30px 30px;
+        border: 1px solid rgba(222, 222, 222, 1);
+    }
+    .team-profile::before {
+        position: absolute;
+        left: -1px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(222, 222, 222, 1);
+    }
+    .team-profile::after {
+        position: absolute;
+        top: 4044px;
+        left: -1px;
+        display: block;
+        content: '';
+        width: 100%;
         border: 1px solid rgba(222, 222, 222, 1);
     }
     .user-pic {
@@ -171,6 +272,7 @@ h1,h2,p,a {margin:0;}
         font-size: 18px;
         line-height: 23.4px;
         color: $secondary-color;
+        font-weight: 400;
     }
     .text-team-end {
         font-size: $primary-font;
@@ -228,7 +330,7 @@ h1,h2,p,a {margin:0;}
         @extend .chose-problem;
         font-family: "NeueMontreal-Light";
         color: rgba(255, 255, 255, 0.4);
-        padding: 10px 0px 0px 10px;
+        padding: 10px 0px 0px 20px;
         height: 240px;
         resize: none;
         margin: 0px 0px 40px;
@@ -253,9 +355,10 @@ h1,h2,p,a {margin:0;}
         margin-bottom: 20px;
     }
     .inf-subtext {
-        font-family: "NeueMontreal-Bold";
+        font-family: "NeueMontreal-light";
         font-size: 18px;
         line-height: 23.4px;
+        font-weight: 400;
     }
 }
 
@@ -272,8 +375,16 @@ h1,h2,p,a {margin:0;}
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
         padding: 20px 40px 24px 40px;
+    }
+    .nav-end::before {
+        position: absolute;
+        left: -1px;
+        top: 6042px;
+        display: block;
+        content: '';
+        width: 100%;
+        border: 1px solid rgba(77, 77, 77, 1);
     }
     .logo-end {
         font-size: $primary-font;
@@ -282,7 +393,7 @@ h1,h2,p,a {margin:0;}
     }
     .end-menu {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
     .link-end {
         font-family: "NeueMontreal-Light";
@@ -340,7 +451,6 @@ h1,h2,p,a {margin:0;}
 }
 @font-face {
     font-family: "NeueMontreal-Light";
-    src: url(/fonts/NeueMontreal-Light.otf);
+    src: url(/fonts/NeueMontreal-Light.otf) foram("truetype");
     font-style: normal;
-    font-weight: lighter;
 }
