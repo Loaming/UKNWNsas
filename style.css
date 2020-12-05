@@ -435,13 +435,6 @@ h1, h2, p, a {
   padding: 152px 0px 148px 0px;
 }
 
-.footer .an {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  background-size: cover;
-}
-
 .footer .nav-end {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,12 +498,20 @@ h1, h2, p, a {
   .user-profile {
     min-width: 310px !important;
   }
+  .unknwn {
+    width: 600px;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 860px) {
   .container {
     width: calc(100% - 40px);
     padding: 0 20px;
+  }
+  .unknwn {
+    width: 300px;
+    background-size: cover;
   }
   .row {
     margin: 0 0px 0px -50px !important;
