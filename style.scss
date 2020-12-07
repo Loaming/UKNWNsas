@@ -24,6 +24,7 @@ body {
     font-family: "NeueMontreal-Bold";
     font-size: $primary-font;
     color: $primary-color;
+    overflow-x: hidden;
 }
 h1,h2,p,a {margin:0;}
 *,
@@ -49,17 +50,17 @@ h1,h2,p,a {margin:0;}
 
         padding: 24px 40px;
         line-height: 31.2px;
+        border-bottom: 1px solid rgba(77, 77, 77, 1);
     }
-    .nav::after {
+    .intro::before {
         position: absolute;
-        top: 79px;
-        left: -1px;
-        display: block;
+        left: 200px;
         content: '';
-        width: 100%;
+        width:795px;
+        display: inline-block;
         border: 1px solid rgba(77, 77, 77, 1);
+        transform: rotate(90deg);
     }
-
     .link {
         text-decoration: none;
         margin-right: 36px;
@@ -71,14 +72,27 @@ h1,h2,p,a {margin:0;}
     .intro {
         display: flex;
         justify-content: center;
-        padding: 208px 0px 298px 0px;
+        align-items: center;
+        height: 795px;
+        
     }
 }
 .unknwn {
-    width: 1180px;
-    height: 290px;
-    z-index: 9999;
-    background-size: cover;
+    position: relative;
+    font-size: 319px;
+    line-height: 414.7px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(52, 52, 52, 1); 
+}
+.unknwn::before {
+    position: absolute;
+    left: 284px;
+    top: 40px;
+    content: "no chance against us";
+    width: 100%;
+    height: 100%;
+    font-size: 64px;
+    color: rgba(255, 255, 255, 1);
 }
 
 /* ABOUT-US */
@@ -110,15 +124,8 @@ h1,h2,p,a {margin:0;}
         @extend %h1-big;
         margin: 0px 0px 80px;
     }
-    .row::before {
-        position: absolute;
-        left: -1px;
-        display: block;
-        content: '';
-        width: 100%;
-        border: 1px solid rgba(77, 77, 77, 1);
-    }
     .row {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -126,11 +133,39 @@ h1,h2,p,a {margin:0;}
         padding-bottom: 96px;
         margin: 0 -50px;
     }
+    .row::before {
+        display: inline-block;
+        content: '';
+        width: 148%;
+        margin-left: -48%;
+        margin-right: -48%;
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
+    .row::after {
+        display: inline-block;
+        content: '';
+        width: 148%;
+        margin-left: -48%;
+        margin-right: -48%;
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
+    
     .item {
         width: 50%;
-        border: 1px solid rgba(77, 77, 77, 1);
         padding: 56px 116px 56px 50px;
+        border-left: 1px solid rgba(77, 77, 77, 1);
+        border-right: 1px solid rgba(77, 77, 77, 1);
     }
+    .item::after {
+        position: absolute;
+        top: 310px;
+        display: inline-block;
+        content: '';
+        width: 100%;
+        margin-left: -30%;
+        border: 1px solid rgba(77, 77, 77, 1);
+    }
+    
     .maintext-project {
         @extend %h2-sub;
         margin: 0px 0px 24px 0px;
@@ -174,14 +209,23 @@ h1,h2,p,a {margin:0;}
     .user-profile {
         width: 25%;
         padding: 30px 30px;
-        border: 1px solid rgba(222, 222, 222, 1);
+        border-left: 1px solid rgba(222, 222, 222, 1);
+        border-right: 1px solid rgba(222, 222, 222, 1);
     }
     .team-profile::before {
-        position: absolute;
-        left: -1px;
         display: block;
         content: '';
-        width: 100%;
+        width: 175%;
+        margin-left: -330px;
+        margin-right: -330px;
+        border: 1px solid rgba(222, 222, 222, 1);
+    }
+    .team-profile::after {
+        display: inline-block;
+        content: '';
+        width: 175%;
+        margin-left: -330px;
+        margin-right: -330px;
         border: 1px solid rgba(222, 222, 222, 1);
     }
     .user-pic {
@@ -294,15 +338,49 @@ h1,h2,p,a {margin:0;}
     background: $background-color;
     
     .end {
+        position: relative;
         display: flex;
         justify-content: center;
         padding: 152px 0px 148px 0px;
     }
+    .unknwn-end {
+        font-size: 319px;
+        line-height: 414.7px;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(52, 52, 52, 1); 
+    }
+    .stroke {
+        position: absolute;
+        top: 380px;
+        display: flex;
+        width: 150%;
+        animation: 80s stroke infinite linear;
+        animation-delay: -10s;
+    }
+    .mark {
+        font-size: 26px;
+        color: rgba(255, 255, 255, 0.2);
+        margin-right: 30px;
+        cursor: pointer;
+        transition: color .2s linear;
+    }
+    .mark:hover {
+        color: blue;
+    }
+    .mark:nth-child(even):hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    @keyframes stroke{
+        0%  { transform: translate(100%, 0); }
+        100% { transform: translate(-100%, 0); }
+        }
+
     .nav-end {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 20px 40px 24px 40px;
+        border-top: 1px solid rgba(77, 77, 77, 1);
     }
     .logo-end {
         font-size: $primary-font;
