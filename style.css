@@ -399,7 +399,7 @@ h1, h2, p, a {
 
 .footer .stroke {
   position: absolute;
-  top: 380px;
+  top: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
