@@ -56,17 +56,6 @@ h1, h2, p, a {
   border-bottom: 1px solid #4d4d4d;
 }
 
-.header .intro::before {
-  position: absolute;
-  left: 200px;
-  content: '';
-  width: 795px;
-  display: inline-block;
-  border: 1px solid #4d4d4d;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
 .header .link {
   text-decoration: none;
   margin-right: 36px;

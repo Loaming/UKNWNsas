@@ -52,15 +52,6 @@ h1,h2,p,a {margin:0;}
         line-height: 31.2px;
         border-bottom: 1px solid rgba(77, 77, 77, 1);
     }
-    .intro::before {
-        position: absolute;
-        left: 200px;
-        content: '';
-        width:795px;
-        display: inline-block;
-        border: 1px solid rgba(77, 77, 77, 1);
-        transform: rotate(90deg);
-    }
     .link {
         text-decoration: none;
         margin-right: 36px;
