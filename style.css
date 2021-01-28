@@ -35,6 +35,22 @@ h1, h2, p, a {
   margin: 0 auto;
 }
 
+.top-container {
+  width: 100%;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.w-container {
+  width: 100%;
+  border-top: 1px solid #4d4d4d;
+  border-bottom: 1px solid #4D4D4D;
+}
+
+.w-container:nth-child(3) {
+  border-top: none;
+}
+
 /* HEADER */
 .header {
   background-color: #131313;
@@ -67,9 +83,14 @@ h1, h2, p, a {
 }
 
 .header .intro {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -79,22 +100,59 @@ h1, h2, p, a {
   height: 795px;
 }
 
+.block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.line-1-2 {
+  width: 719px;
+  border-left: 1px solid #4d4d4d;
+  border-right: 1px solid #4d4d4d;
+}
+
+.line-2-1 {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #4d4d4d;
+}
+
+.block-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
 .unknwn {
-  position: relative;
-  font-size: 319px;
+  position: absolute;
+  top: 19%;
+  font-size: 16.5vw;
   line-height: 414.7px;
   color: transparent;
   -webkit-text-stroke: 2px #343434;
 }
 
-.unknwn::before {
+.unk {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+}
+
+.n-chance {
   position: absolute;
-  left: 284px;
-  top: 40px;
-  content: "no chance against us";
-  width: 100%;
-  height: 100%;
-  font-size: 64px;
+  top: 44.3%;
+  font-size: 3.3vw;
   color: white;
 }
 
@@ -121,6 +179,10 @@ h1, h2, p, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #131313;
   padding: 72px 0px 174px 0px;
 }
@@ -143,26 +205,7 @@ h1, h2, p, a {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 96px;
   margin: 0 -50px;
-}
-
-.cases .row::before {
-  display: inline-block;
-  content: '';
-  width: 148%;
-  margin-left: -48%;
-  margin-right: -48%;
-  border: 1px solid #4d4d4d;
-}
-
-.cases .row::after {
-  display: inline-block;
-  content: '';
-  width: 148%;
-  margin-left: -48%;
-  margin-right: -48%;
-  border: 1px solid #4d4d4d;
 }
 
 .cases .item {
@@ -172,14 +215,8 @@ h1, h2, p, a {
   border-right: 1px solid #4d4d4d;
 }
 
-.cases .item::after {
-  position: absolute;
-  top: 310px;
-  display: inline-block;
-  content: '';
-  width: 100%;
-  margin-left: -30%;
-  border: 1px solid #4d4d4d;
+.cases .item:nth-child(2) {
+  border-left: none;
 }
 
 .cases .maintext-project {
@@ -195,6 +232,7 @@ h1, h2, p, a {
 }
 
 .cases .cases-text-end {
+  margin-top: 96px;
   text-transform: uppercase;
 }
 
@@ -203,6 +241,10 @@ h1, h2, p, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 70px 0px 96px 0px;
 }
 
@@ -222,7 +264,6 @@ h1, h2, p, a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 64px;
   margin: 0 -30px;
 }
 
@@ -233,22 +274,13 @@ h1, h2, p, a {
   border-right: 1px solid #dedede;
 }
 
-.unknwn-team .team-profile::before {
-  display: block;
-  content: '';
-  width: 175%;
-  margin-left: -330px;
-  margin-right: -330px;
-  border: 1px solid #dedede;
+.unknwn-team .user-profile:nth-child(2) {
+  border-right: none;
+  border-left: none;
 }
 
-.unknwn-team .team-profile::after {
-  display: inline-block;
-  content: '';
-  width: 175%;
-  margin-left: -330px;
-  margin-right: -330px;
-  border: 1px solid #dedede;
+.unknwn-team .user-profile:nth-child(4) {
+  border-left: none;
 }
 
 .unknwn-team .user-pic {
@@ -272,6 +304,7 @@ h1, h2, p, a {
 }
 
 .unknwn-team .text-team-end {
+  margin-top: 64px;
   font-size: 24px;
   line-height: 31.2px;
   color: black;
@@ -387,7 +420,7 @@ h1, h2, p, a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 152px 0px 148px 0px;
+  padding: 148px 0px 148px 0px;
 }
 
 .footer .unknwn-end {
