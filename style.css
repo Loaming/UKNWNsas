@@ -438,7 +438,7 @@ h1, h2, p, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 150%;
+  width: 100%;
   -webkit-animation: 80s stroke infinite linear;
           animation: 80s stroke infinite linear;
   -webkit-animation-delay: -10s;
