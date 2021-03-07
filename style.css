@@ -36,6 +36,12 @@ h1, h2, p, a {
   margin: 0 auto;
 }
 
+.svg-item {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+
 .top-container {
   width: 100%;
   border-top: 1px solid #dedede;
@@ -174,9 +180,7 @@ h1, h2, p, a {
   -webkit-text-stroke: 1px rgba(000, 000, 000);
 }
 .goddamn {
-  background: rgba(0, 71, 255, 0.97);
-  border-radius: 25%;
-  color: rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 /* ABOUT-US */
@@ -255,6 +259,7 @@ h1, h2, p, a {
 }
 
 .cases .cases-text-end {
+  position: relative;
   margin-top: 96px;
   text-transform: uppercase;
 }
@@ -582,6 +587,27 @@ h1, h2, p, a {
   }
   .item {
     width: 100% !important;
+  }
+  .maintext-project {
+    font-size: 35px !important;
+    line-height: normal !important;
+}
+  .user-profile:nth-child(1) {
+    border-bottom: 1px solid #dedede;;
+  }
+  .user-profile:nth-child(2) {
+    border-left: 1px solid #dedede !important;
+    border-right: 1px solid #dedede !important;
+    border-bottom: 1px solid #dedede;;
+  }
+  .user-profile:nth-child(3) {
+    border-bottom: 1px solid #dedede;;
+  }
+  .user-profile:nth-child(4) {
+    border-left: 1px solid #dedede !important;
+  }
+  .item:nth-child(1) {
+    border-bottom: 1px solid #4d4d4d;
   }
   .about-us-text {
     width: 100% !important;
