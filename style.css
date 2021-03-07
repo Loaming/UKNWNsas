@@ -21,6 +21,7 @@ body {
 
 h1, h2, p, a {
   margin: 0;
+  font-weight: 400;
 }
 
 *,
@@ -40,6 +41,11 @@ h1, h2, p, a {
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
 }
+.line {
+  width: 100%;
+  margin: 0px 0px 52px;
+  border-bottom: 1px solid #dedede;
+}
 
 .w-container {
   width: 100%;
@@ -57,6 +63,9 @@ h1, h2, p, a {
 }
 
 .header .nav {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +79,7 @@ h1, h2, p, a {
   padding: 24px 40px;
   line-height: 31.2px;
   border-bottom: 1px solid #4d4d4d;
+  background-color: #131313;
 }
 
 .header .link {
@@ -77,13 +87,16 @@ h1, h2, p, a {
   margin-right: 36px;
   color: white;
 }
+.header .link:hover {
+    text-decoration: underline;
+}
 
 .header .link:last-child {
   margin-right: 0;
 }
 
 .intro {
-  height: 91.5vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,6 +168,15 @@ h1, h2, p, a {
 .unk {
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+}
+.unk1 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(000, 000, 000);
+}
+.goddamn {
+  background: rgba(0, 71, 255, 0.97);
+  border-radius: 25%;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /* ABOUT-US */
@@ -251,7 +273,7 @@ h1, h2, p, a {
 
 .unknwn-team .team-logo {
   color: black;
-  margin: 0px 0px 136px;
+  margin: 0px 0px 83px;
 }
 
 .unknwn-team .team-text {
@@ -361,6 +383,15 @@ h1, h2, p, a {
   border: 1px solid white;
   margin-right: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.chose-problem:hover {
+  background-color: rgba(255, 255, 255);
+  color: rgba(22, 54, 153, 1);
+}
+.chose-problem:focus {
+  color: rgba(22, 54, 153, 1);
+  background-color: rgba(255, 255, 255);
 }
 
 .contact .input-em {
@@ -436,11 +467,9 @@ h1, h2, p, a {
 .footer .stroke {
   position: absolute;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  -webkit-animation: 80s stroke infinite linear;
-          animation: 80s stroke infinite linear;
+  -webkit-animation: 60s stroke infinite linear;
+          animation: 60s stroke infinite linear;
   -webkit-animation-delay: -10s;
           animation-delay: -10s;
 }
@@ -520,6 +549,9 @@ h1, h2, p, a {
   margin-right: 24px;
   text-decoration: none;
 }
+.link-end:hover {
+  text-decoration: underline;
+}
 
 .footer .link-end:last-child, .footer .f:last-child {
   margin: 0;
@@ -566,12 +598,13 @@ h1, h2, p, a {
   font-family: "NeueMontreal-Bold";
   src: url(/fonts/NeueMontreal-Bold.otf) format("truetype");
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "NeueMontreal-Light";
   src: url(/fonts/NeueMontreal-Light.otf) foram("truetype");
   font-style: normal;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
