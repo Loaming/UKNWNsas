@@ -35,6 +35,9 @@ h1, h2, p, a {
   width: 1180px;
   margin: 0 auto;
 }
+#menu {
+  display: none;
+}
 
 .svg-item {
   position: absolute;
@@ -587,6 +590,40 @@ h1, h2, p, a {
 }
 
 @media (max-width: 860px) {
+  #menu {
+    display: block !important;
+  }
+  .mobile-menu {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgba(250, 250, 250);
+    margin-bottom: 40px;
+}
+.mobile-menu:hover {
+  text-decoration: underline;
+}
+.menu-nav {
+    display: none !important;
+}
+.mob-menu-on {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #131313;
+  width: 100%;
+  height: 100vh;
+}
+.btn-menu {
+  background-color: #131313;
+  border: #131313;
+}
+.menu-enter-active, .menu-leave-active {
+  transition: opacity .5s;
+}
+.menu-enter, .menu-leave-to {
+  opacity: 0;
+}
   .intro {
     height: 60vh;
   }
