@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', () => {
   let btn1 = document.querySelector(".btn-menu-1"),
       btn2 = document.querySelector(".btn-menu-2"),
       nav = document.querySelector(".nav-mob-menu"),
-      open = document.querySelector("mob-link");
       menu = document.querySelector(".mob-menu");
 
 menu.onclick = function() {
