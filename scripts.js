@@ -1,22 +1,20 @@
-new Vue ({
-    el: '#menu',
-    data: {
-      items: [
-      'about',
-      'cases',
-      'team',
-      'contacts',
-      ],
-    show: false
-  },
-  watch: {
-    show: function(hide) {
-      let className = 'closed';
-      if (hide) {
-        document.body.style.overflow='hidden';
-      } else {
-        document.body.style.overflow='auto';
-      }
-    } 
-   }
-  });
+window.addEventListener('DOMContentLoaded', () => {
+
+  let btn1 = document.querySelector(".btn-menu-1"),
+      btn2 = document.querySelector(".btn-menu-2"),
+      nav = document.querySelector(".nav-mob-menu"),
+      open = document.querySelector("mob-link");
+      menu = document.querySelector(".mob-menu");
+
+menu.onclick = function() {
+  btn1.classList.toggle('close');
+  btn2.classList.toggle('open');
+  nav.classList.toggle('open-nav');
+  if(btn1.classList.contains('close')){
+    document.body.style.overflow='hidden';
+  }else{
+    document.body.style.overflow='auto';
+  }
+};
+
+})
