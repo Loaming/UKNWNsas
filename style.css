@@ -95,9 +95,12 @@ h1, h2, p, a {
   text-decoration: none;
   margin-right: 36px;
   color: white;
+  border-bottom: 1px solid transparent;
+  transition: all 1s;
 }
+
 .header .link:hover {
-    text-decoration: underline;
+  border-color:rgba(255, 255, 255);
 }
 
 .header .link:last-child {
@@ -393,6 +396,9 @@ h1, h2, p, a {
   margin-bottom: 10px;
   cursor: pointer;
 }
+.chose-problem {
+  transition: all 1s ease;
+}
 .chose-problem:hover {
   background-color: rgba(255, 255, 255);
   color: rgba(22, 54, 153, 1);
@@ -557,8 +563,12 @@ h1, h2, p, a {
   margin-right: 24px;
   text-decoration: none;
 }
+.link-end {
+  border-bottom: 1px solid transparent;
+  transition: all 1s ease;
+}
 .link-end:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(255, 255, 255);
 }
 
 .footer .link-end:last-child, .footer .f:last-child {
