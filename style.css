@@ -428,8 +428,15 @@ h1, h2, p, a {
   font-family: "NeueMontreal-Bold";
   font-size: 24px;
   color: #163699;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255);
   padding: 14px 0px 14px 0px;
   cursor: pointer;
+  transition: all 1s ease;
+}
+.send-req:hover {
+  background-color: #163699;
+  color:rgba(255, 255, 255);
 }
 
 .contact .inf-contact {
