@@ -6,16 +6,17 @@ window.addEventListener('DOMContentLoaded', () => {
       navMenu = document.querySelector(".nav-mob-menu"),
       menu = document.querySelector(".mob-menu");
 
-menu.onclick = function() {
+let menuClick = () => {
   btn1.classList.toggle('close');
   btn2.classList.toggle('open');
   nav.classList.toggle('nav-op');
   navMenu.classList.toggle('open-nav');
-  if(btn1.classList.contains('close')){
+  if ( btn1.classList.contains('close')) {
     document.body.style.overflow='hidden';
-  }else{
+  } else {
     document.body.style.overflow='auto';
   }
 };
+menu.addEventListener('click', menuClick)
 
 })
